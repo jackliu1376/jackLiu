@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+      <form action="/register" method="post">
+          <div>
+          <h3>用户个人信息</h3>
+          <label>用户名:<input type="text" required></label>
+              <br>
+          <label>密码:<input type="password" required></label>
+              <br>
+          性别:<label><input type="radio" name="gender">male</label>
+               <label><input type="radio" name="gender">female</label>
+              <br>
+          <label>生日:<input type="date" id="birthday" required></label>
+              <br>
+            <label>
+                籍贯: <input list="jiguan">
+              <datalist id="jiguan">
+                  <option>郑州</option>
+                  <option>驻马店</option>
+                  <option>哈尔滨</option>
+              </datalist>
+            </label>
+              <br>
+             <label>
+                 学历:<select>
+                  <option></option>
+                  <option selected>学士</option>
+                  <option>硕士</option>
+                  <option>博士</option>
+              </select>
+              </label>
+          </div>
+          <div>
+              <h3>用户其他信息</h3>
+              喜欢的课程:
+              <ul>
+                  <li><label><input type="checkbox" checked>Web开发技术</label></li>
+                  <li><label><input type="checkbox" >Java程序语言设计</label></li>
+                  <li><label><input type="checkbox" >数据库原理</label></li>
+                  <li><label><input type="checkbox" >系统分析与测试</label></li>
+              </ul>
+              照片:<input id="photo" type="file" accept=".jpg,.png">
+          </div>
+          <button type="submit">提交</button>
+          <button type="reset">重置</button>
+      </form>
+
+</body>
+</html>
