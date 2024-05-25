@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      span.label{
+        padding: 10px 10px;
+          border-radius: 3px;
+          color: white;
+      }
+      span.success{
+        background: green;
+      }
+      span.warning{
+        background: orange;
+      }
+      table{
+        width: 100%;
+      border-collapse: collapse;
+      }
+      table th,table td{
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #ff00ff;
+      }
+      /*even odd */
+      tbody tr:nth-child(odd){
+        background-color: aquamarine;
+      }
+      a.btn{
+        background-color: #f44336;
+        color: white;
+        padding: 10px 25px;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 8px;
+      }
+      a.btn:hover{
+        color: black;
+        background-color: red;
+      }
+    </style>
+</head>
+<body>
+     <div class="main"></div>
+        <h3>学生信息</h3>
+      <p>说明：以下为2022级学生名单，共4人，
+      <span class="label success">成功加载3人</span>。
+      <span class="label warning">警告：列表不包含降级学生</span>。
+      </p>
+      <table>
+        <thead>
+        <tr>
+        <th>#</th>
+        <th>姓名</th>
+        <th>班级</th>
+        <th>Email</th>
+          <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>小青</td>
+            <td>软件工程2022级3班</td>
+            <td>qing@example.com</td>
+            <td><a href="#" class="btn">修改</a> <a href="#" class="btn">删除</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>小红</td>
+            <td>软件工程2022级2班</td>
+            <td>hong@example.com</td>
+            <td><a href="#" class="btn">修改</a> <a href="#" class="btn">删除</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>小龙</td>
+            <td>软件工程2022级1班</td>
+            <td>long@example.com</td>
+            <td><a href="#" class="btn">修改</a> <a href="#" class="btn">删除</a></td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>
